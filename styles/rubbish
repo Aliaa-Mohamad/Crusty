@@ -1,0 +1,24 @@
+@media screen and (max-width: 428px) {
+  /* Who-we-are & location & contact */
+  .Who-we-are .container,
+  .location .container,
+  .contact .container {
+    flex-direction: column;
+  }
+
+  /* Who-we-are */
+  .Who-we-are {
+    height: 140vh;
+  }
+
+  .Who-we-are li span {
+    font-size: 17px;
+  }
+
+  /* location */
+  .location {
+    height: 110vh;
+  }
+
+  /* contact */
+}

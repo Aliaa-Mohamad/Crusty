@@ -1,0 +1,135 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/Alegreya-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Alegreya_Sans";
+  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf") format("truetype");
+}
+
+/* Root Colors - Warm Natural Palette */
+:root {
+  --dark: #3e3224;
+  --semi-dark: #5b4636;
+  --honey: #c49a6c;
+  --cream: #f9f4ef;
+  --beige: #f3e8dc;
+  --text-light: #fff;
+}
+
+/* General Typography */
+body {
+  background-color: var(--cream);
+  color: var(--semi-dark);
+  font-family: "Alegreya_Sans", sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, nav ul {
+  font-family: "Alegreya", serif;
+  color: var(--dark);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Buttons */
+button {
+  font-family: "Alegreya_Sans";
+  cursor: pointer;
+}
+
+/* Global Sections */
+.section-pad {
+  padding: 80px 0;
+}
+
+/* Side Icons */
+.side_icons {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  background-color: var(--beige);
+  padding: 15px 10px;
+  font-size: 20px;
+  z-index: 10;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+
+.side_icons i {
+  display: block;
+  color: var(--dark);
+  margin-bottom: 12px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.side_icons i:hover {
+  transform: scale(1.2);
+  color: var(--honey);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+.slide-up {
+  animation: slideUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+.zoom-in {
+  animation: zoomIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(60px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--honey);
+}
+
+/* Responsive */
+@media (max-width: 428px) {
+  .section-pad {
+    padding: 50px 0;
+  }
+}
