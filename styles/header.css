@@ -66,6 +66,10 @@ header::before {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
+.header-content button:first-child {
+  margin-right: 20px;
+}
+
 /* Scroll Down Hint (اختياري) */
 .scroll-down {
   position: absolute;
