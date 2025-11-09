@@ -51,7 +51,7 @@ header::before {
 /* Button */
 .header-content button {
   background-color: var(--honey);
-  color: #fff;
+  color: #eddcaf;
   border: none;
   padding: 14px 32px;
   border-radius: 6px;
@@ -64,10 +64,6 @@ header::before {
   background-color: #b98755;
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-.header-content button:first-child {
-  margin-right: 20px;
 }
 
 /* Scroll Down Hint (اختياري) */
